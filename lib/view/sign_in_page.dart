@@ -1,4 +1,5 @@
 import 'package:baby_needs/utils/colors.dart';
+import 'package:baby_needs/view/add_item_page.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:baby_needs/widget/custom_text_field.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +59,7 @@ class SignInPage extends StatelessWidget {
                     bordercolor: AppColor.bordercolor,
                     buttoncolor: AppColor.bordercolor,
                     onPressed: () {
-                      Get.offNamed("PasswordReset");
+                      Get.offNamed(AddItemPage.routename);
                     }),
               ),
               // ignore: prefer_const_constructors

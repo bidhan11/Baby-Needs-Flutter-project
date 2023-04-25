@@ -67,7 +67,7 @@ class MothersDetailsPage extends StatelessWidget {
                   bordercolor: AppColor.bordercolor,
                   buttoncolor: AppColor.bordercolor,
                   onPressed: () {
-                    Get.offNamed("PasswordReset");
+                    Get.offNamed("ProfilePage");
                   },
                 ),
               ),
