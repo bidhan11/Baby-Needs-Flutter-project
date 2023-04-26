@@ -102,17 +102,17 @@ class AddItemPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 50.0, left: 23, right: 23),
-                  child: SizedBox(
-                    width: 344,
-                    child: CustomButton(
-                        buttonname: "Save ",
-                        bordercolor: AppColor.bordercolor,
-                        buttoncolor: AppColor.bordercolor,
-                        onPressed: () {}),
-                  ),
+                const SizedBox(
+                  height: 40,
                 ),
+                CustomButton(
+                    buttonname: "Save ",
+                    bordercolor: AppColor.bordercolor,
+                    buttoncolor: AppColor.bordercolor,
+                    onPressed: () {}),
+                const SizedBox(
+                  height: 40,
+                )
               ],
             ),
           ),

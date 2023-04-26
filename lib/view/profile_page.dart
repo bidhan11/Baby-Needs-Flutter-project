@@ -18,7 +18,7 @@ class ProfilePage extends StatelessWidget {
           backgroundColor: AppColor.homecolor,
           title: const Center(
               child: Text(
-            "Change Password",
+            "Profile Page",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ))),
       // ignore: prefer_const_constructors
@@ -33,9 +33,7 @@ class ProfilePage extends StatelessWidget {
                 padding: EdgeInsets.only(top: 20.0),
                 child: Center(
                   child: CircleAvatar(
-                      radius: 70,
-                      backgroundImage:
-                          AssetImage("assets/images/profile.jpeg")),
+                      radius: 70, backgroundImage: AssetImage("assets/images/profile.jpeg")),
                 ),
               ),
               const Padding(
@@ -44,9 +42,7 @@ class ProfilePage extends StatelessWidget {
                   child: Text(
                     "Zane Sharma",
                     style: TextStyle(
-                        color: AppColor.textcolor,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w800),
+                        color: AppColor.textcolor, fontSize: 16, fontWeight: FontWeight.w800),
                   ),
                 ),
               ),
@@ -56,9 +52,7 @@ class ProfilePage extends StatelessWidget {
                   child: Text(
                     "zanesharma@gmail.com",
                     style: TextStyle(
-                        color: AppColor.textcolor,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500),
+                        color: AppColor.textcolor, fontSize: 12, fontWeight: FontWeight.w500),
                   ),
                 ),
               ),
@@ -67,9 +61,7 @@ class ProfilePage extends StatelessWidget {
                 child: Text(
                   "Statisctics",
                   style: TextStyle(
-                      color: AppColor.textcolor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w800),
+                      color: AppColor.textcolor, fontSize: 20, fontWeight: FontWeight.w800),
                 ),
               ),
               Padding(
@@ -80,7 +72,7 @@ class ProfilePage extends StatelessWidget {
                       t_head: "Total items",
                       t_body: "100",
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 7,
                     ),
                     BackgroundTile(
@@ -95,9 +87,7 @@ class ProfilePage extends StatelessWidget {
                 child: Text(
                   "Mother Detail",
                   style: TextStyle(
-                      color: AppColor.textcolor,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                      color: AppColor.textcolor, fontWeight: FontWeight.bold, fontSize: 20),
                 ),
               ),
               Padding(
@@ -106,8 +96,7 @@ class ProfilePage extends StatelessWidget {
                   height: 80,
                   width: 344,
                   decoration: BoxDecoration(
-                      color: AppColor.highlight,
-                      borderRadius: BorderRadius.circular(10)),
+                      color: AppColor.highlight, borderRadius: BorderRadius.circular(10)),
                   child: Column(children: [
                     Row(
                       children: const [
@@ -125,8 +114,7 @@ class ProfilePage extends StatelessWidget {
                           padding: EdgeInsets.only(top: 16.0, left: 5),
                           child: Text(
                             "(1990/01/13)",
-                            style: TextStyle(
-                                color: AppColor.textcolor, fontSize: 12),
+                            style: TextStyle(color: AppColor.textcolor, fontSize: 12),
                           ),
                         )
                       ],
@@ -154,9 +142,7 @@ class ProfilePage extends StatelessWidget {
                 child: Text(
                   "Settings",
                   style: TextStyle(
-                      color: AppColor.textcolor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
+                      color: AppColor.textcolor, fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
               GestureDetector(
@@ -169,13 +155,11 @@ class ProfilePage extends StatelessWidget {
                     height: 50,
                     width: 344,
                     decoration: BoxDecoration(
-                        color: AppColor.highlight,
-                        borderRadius: BorderRadius.circular(7)),
+                        color: AppColor.highlight, borderRadius: BorderRadius.circular(7)),
                     child: Row(
                       children: const [
                         Padding(
-                          padding:
-                              EdgeInsets.only(top: 10.0, left: 12, bottom: 10),
+                          padding: EdgeInsets.only(top: 10.0, left: 12, bottom: 10),
                           child: Text(
                             "Password ",
                             style: TextStyle(
@@ -196,32 +180,22 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 48,
+              ),
               Padding(
-                padding: const EdgeInsets.only(top: 50.0, left: 20, right: 20),
-                child: SizedBox(
-                  width: 300,
-                  child: CustomButton(
-                      buttonname: "Log Out",
-                      bordercolor: AppColor.alert,
-                      buttoncolor: AppColor.alert,
-                      onPressed: () {
-                        Get.offAllNamed(IntroPage.routename);
-                      }),
-                ),
+                padding: const EdgeInsets.only(right: 10.0),
+                child: CustomButton(
+                    buttonname: "Log Out",
+                    bordercolor: AppColor.alert,
+                    buttoncolor: AppColor.alert,
+                    onPressed: () {
+                      Get.offAllNamed(IntroPage.routename);
+                    }),
               ),
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColor.homecolor,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-        ],
       ),
     );
   }

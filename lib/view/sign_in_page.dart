@@ -1,5 +1,7 @@
 import 'package:baby_needs/utils/colors.dart';
 import 'package:baby_needs/view/add_item_page.dart';
+import 'package:baby_needs/view/home_page.dart';
+import 'package:baby_needs/widget/bottom_nav_bar.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:baby_needs/widget/custom_text_field.dart';
 import 'package:flutter/material.dart';
@@ -29,14 +31,11 @@ class SignInPage extends StatelessWidget {
               ),
               // ignore: prefer_const_constructors
               Padding(
-                padding:
-                    const EdgeInsets.only(top: 26.0, left: 127, right: 140),
+                padding: const EdgeInsets.only(top: 26.0, left: 127, right: 140),
                 child: const Text(
                   "Sign In",
                   style: TextStyle(
-                      color: AppColor.textcolor,
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold),
+                      color: AppColor.textcolor, fontSize: 32, fontWeight: FontWeight.bold),
                 ),
               ),
               // ignore: prefer_const_constructors
@@ -53,13 +52,13 @@ class SignInPage extends StatelessWidget {
                     fieldName: "Password",
                   )),
               Padding(
-                padding: const EdgeInsets.only(top: 61.0),
+                padding: const EdgeInsets.only(top: 61.0, left: 51, right: 56),
                 child: CustomButton(
                     buttonname: "Sign In",
                     bordercolor: AppColor.bordercolor,
                     buttoncolor: AppColor.bordercolor,
                     onPressed: () {
-                      Get.offNamed(AddItemPage.routename);
+                      Get.offNamed(NavBar.routename);
                     }),
               ),
               // ignore: prefer_const_constructors
@@ -67,8 +66,7 @@ class SignInPage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 61.0),
                 child: const Text(
                   "Don't have an account?",
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 163, 173, 199), fontSize: 16),
+                  style: TextStyle(color: Color.fromARGB(255, 163, 173, 199), fontSize: 16),
                 ),
               ),
               TextButton(

@@ -25,10 +25,8 @@ class IntroPage extends StatelessWidget {
               padding: const EdgeInsets.only(top: 40.0, right: 66, left: 67),
               child: const Text(
                 "Welcome to Baby Buy",
-                style: TextStyle(
-                    fontSize: 20,
-                    color: AppColor.textcolor,
-                    fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(fontSize: 20, color: AppColor.textcolor, fontWeight: FontWeight.bold),
               ),
             ),
             // ignore: prefer_const_constructors
@@ -41,7 +39,7 @@ class IntroPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 62.0),
+              padding: const EdgeInsets.only(left: 59.0, right: 48, top: 62),
               child: CustomButton(
                 buttonname: "Sign Up",
                 bordercolor: AppColor.bordercolor,
@@ -52,7 +50,7 @@ class IntroPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 40.0),
+              padding: const EdgeInsets.only(left: 59.0, right: 48, top: 40),
               child: CustomButton(
                 buttonname: "Sign In",
                 bordercolor: AppColor.bordercolor,

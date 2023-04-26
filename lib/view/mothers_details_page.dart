@@ -1,4 +1,5 @@
 import 'package:baby_needs/utils/colors.dart';
+import 'package:baby_needs/view/home_page.dart';
 import 'package:baby_needs/view/password_reset.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:baby_needs/widget/custom_text_field.dart';
@@ -35,9 +36,7 @@ class MothersDetailsPage extends StatelessWidget {
                   child: const Text(
                     "Mother Details",
                     style: TextStyle(
-                        color: AppColor.textcolor,
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold),
+                        color: AppColor.textcolor, fontSize: 32, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -61,13 +60,13 @@ class MothersDetailsPage extends StatelessWidget {
                     fieldName: "Delivery Date",
                   )),
               Padding(
-                padding: const EdgeInsets.only(top: 46.0),
+                padding: const EdgeInsets.only(top: 46.0, left: 53, right: 53),
                 child: CustomButton(
                   buttonname: "Continue",
                   bordercolor: AppColor.bordercolor,
                   buttoncolor: AppColor.bordercolor,
                   onPressed: () {
-                    Get.offNamed("ProfilePage");
+                    Get.offNamed(HomePage.routename);
                   },
                 ),
               ),

@@ -8,4 +8,5 @@ class AppColor {
   static const highlight = Color(0xff252834);
   static const texthighlight = Color(0xffAAAAAA);
   static const alert = Color(0xffFF3737);
+  static const indicator = Color(0xff323D5D);
 }
