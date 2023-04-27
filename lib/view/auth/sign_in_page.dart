@@ -1,14 +1,15 @@
 import 'package:baby_needs/utils/colors.dart';
-import 'package:baby_needs/view/mothers_details_page.dart';
+import 'package:baby_needs/view/home/add_item_page.dart';
+import 'package:baby_needs/view/home/home_page.dart';
 import 'package:baby_needs/widget/bottom_nav_bar.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:baby_needs/widget/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({super.key});
-  static const String routename = "/SignUpPage";
+class SignInPage extends StatelessWidget {
+  const SignInPage({super.key});
+  static const String routename = "/SignInPage";
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class SignUpPage extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 67.0),
+                padding: const EdgeInsets.only(top: 92.0),
                 child: Image.asset(
                   "assets/images/logo.png",
                   height: 270,
@@ -32,18 +33,12 @@ class SignUpPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 26.0, left: 127, right: 140),
                 child: const Text(
-                  "Sign Up",
+                  "Sign In",
                   style: TextStyle(
                       color: AppColor.textcolor, fontSize: 32, fontWeight: FontWeight.bold),
                 ),
               ),
               // ignore: prefer_const_constructors
-              SizedBox(
-                width: 330,
-                child: CustomTextField(
-                  fieldName: "Name",
-                ),
-              ),
               SizedBox(
                 width: 330,
                 child: CustomTextField(
@@ -57,30 +52,29 @@ class SignUpPage extends StatelessWidget {
                     fieldName: "Password",
                   )),
               Padding(
-                padding: const EdgeInsets.only(top: 46.0, left: 51, right: 56),
+                padding: const EdgeInsets.only(top: 61.0, left: 51, right: 56),
                 child: CustomButton(
-                  buttonname: "Sign Up",
-                  bordercolor: AppColor.bordercolor,
-                  buttoncolor: AppColor.bordercolor,
-                  onPressed: () {
-                    Get.toNamed(NavBar.routename);
-                  },
-                ),
+                    buttonname: "Sign In",
+                    bordercolor: AppColor.bordercolor,
+                    buttoncolor: AppColor.bordercolor,
+                    onPressed: () {
+                      Get.offNamed(NavBar.routename);
+                    }),
               ),
               // ignore: prefer_const_constructors
               Padding(
-                padding: const EdgeInsets.only(top: 39.0),
+                padding: const EdgeInsets.only(top: 61.0),
                 child: const Text(
-                  "Already have an account?",
+                  "Don't have an account?",
                   style: TextStyle(color: Color.fromARGB(255, 163, 173, 199), fontSize: 16),
                 ),
               ),
               TextButton(
                   onPressed: () {
-                    Get.offNamed("SignInPage");
+                    Get.offNamed("SignUpPage");
                   },
                   child: const Text(
-                    "Sign In",
+                    "Sign Up",
                     style: TextStyle(
                         color: AppColor.textcolor,
                         decoration: TextDecoration.underline,

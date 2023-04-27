@@ -1,6 +1,6 @@
 import 'package:baby_needs/utils/colors.dart';
-import 'package:baby_needs/view/sign_in_page.dart';
-import 'package:baby_needs/view/sign_up_page.dart';
+import 'package:baby_needs/view/auth/sign_in_page.dart';
+import 'package:baby_needs/view/auth/sign_up_page.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -1,6 +1,6 @@
 import 'package:baby_needs/utils/colors.dart';
-import 'package:baby_needs/view/intro_page.dart';
-import 'package:baby_needs/view/password_reset.dart';
+import 'package:baby_needs/view/auth/intro_page.dart';
+import 'package:baby_needs/view/profile/password_reset.dart';
 import 'package:baby_needs/widget/custom/background_tile.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:flutter/material.dart';

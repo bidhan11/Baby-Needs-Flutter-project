@@ -1,6 +1,7 @@
 import 'package:baby_needs/utils/colors.dart';
-import 'package:baby_needs/view/home_page.dart';
-import 'package:baby_needs/view/password_reset.dart';
+import 'package:baby_needs/view/home/home_page.dart';
+import 'package:baby_needs/view/profile/password_reset.dart';
+import 'package:baby_needs/widget/bottom_nav_bar.dart';
 import 'package:baby_needs/widget/custom/custom_button.dart';
 import 'package:baby_needs/widget/custom_text_field.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +67,7 @@ class MothersDetailsPage extends StatelessWidget {
                   bordercolor: AppColor.bordercolor,
                   buttoncolor: AppColor.bordercolor,
                   onPressed: () {
-                    Get.offNamed(HomePage.routename);
+                    Get.offNamed(NavBar.routename);
                   },
                 ),
               ),

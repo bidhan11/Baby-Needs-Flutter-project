@@ -1,6 +1,6 @@
 import 'package:baby_needs/utils/colors.dart';
-import 'package:baby_needs/view/home_page.dart';
-import 'package:baby_needs/view/profile_page.dart';
+import 'package:baby_needs/view/home/home_page.dart';
+import 'package:baby_needs/view/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatefulWidget {

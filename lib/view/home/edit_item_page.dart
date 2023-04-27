@@ -3,8 +3,8 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../widget/custom/custom_button.dart';
-import '../widget/custom/custom_item_text_field.dart';
+import '../../widget/custom/custom_button.dart';
+import '../../widget/custom/custom_item_text_field.dart';
 
 class EditItemPage extends StatelessWidget {
   static final String routename = "/EditItemPage";

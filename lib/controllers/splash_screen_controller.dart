@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:baby_needs/view/intro_page.dart';
+import 'package:baby_needs/view/auth/intro_page.dart';
 import 'package:get/get.dart';
 
 class SplashScreenController extends GetxController {

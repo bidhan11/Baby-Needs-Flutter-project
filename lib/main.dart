@@ -1,5 +1,6 @@
+import 'package:baby_needs/controllers/items_controllers.dart';
 import 'package:baby_needs/routes/approutes.dart';
-import 'package:baby_needs/view/splash_screen.dart';
+import 'package:baby_needs/view/auth/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(fontFamily: "Poppins"),
       getPages: routes,
       initialRoute: SplashScreen.routename,
+      initialBinding: BindingsBuilder(() {
+        Get.put(ItemsListController());
+      }),
     );
   }
 }
